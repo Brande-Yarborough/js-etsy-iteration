@@ -62,6 +62,12 @@ wood.forEach(function(item) {
     console.log(`${item.title} has ${item.materials.length}. ${item.materials}`);
  });
 
+ //6. 
+ const sellers = items.filter(function(item) {
+    return item.who_made === "i_did";
+ });
+ console.log(`${sellers.length} were made by their sellers`);
+
 
 
 
