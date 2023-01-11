@@ -44,6 +44,15 @@ gbp.forEach(function(item) { //in order to access items in array, you have to us
     console.log(`${item.title}, costs £${item.price}`);
 });
 
+//4. 
+
+const wood = items.filter(function(item) {
+return item.materials.includes("wood");
+});
+
+wood.forEach(function(item) {
+    console.log(`${item.title} is made of wood.`);
+});
 
 
 
