@@ -4,7 +4,7 @@
 
 const currency = items.filter(function(item) {
     return item.currency_code === 'USD';
-});
+}); //if evaluates true, item will be given back in array returned
 
 const prices = currency.map(function (item) { //map method returns new array with price
     return item.price;
@@ -47,7 +47,7 @@ gbp.forEach(function(item) { //in order to access items in array, you have to us
 //4. 
 
 const wood = items.filter(function(item) {
-return item.materials.includes("wood");
+return item.materials.includes("wood"); //evaluates to true or false, if wood included this item will be returned inside the array 
 });
 
 wood.forEach(function(item) {
@@ -63,10 +63,10 @@ wood.forEach(function(item) {
  });
 
  //6. 
- const sellers = items.filter(function(item) {
+ const madeBySellers = items.filter(function(item) {
     return item.who_made === "i_did";
  });
- console.log(`${sellers.length} were made by their sellers`);
+ console.log(`${madeBySellers.length} were made by their sellers`);
 
 
 
