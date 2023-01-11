@@ -54,6 +54,15 @@ wood.forEach(function(item) {
     console.log(`${item.title} is made of wood.`);
 });
 
+//5. 
+ const materials = items.filter(function(item) {
+    return item.materials.length > 8;
+ });
+ materials.forEach(function(item) {
+    console.log(`${item.title} has ${item.materials.length}. ${item.materials}`);
+ });
+
+
 
 
 
